@@ -63,9 +63,7 @@ scraper-sbs-peru/
 │   ├── utils/           # Logger y helpers de fechas
 │   └── pipeline.py      # Orquestador principal
 ├── tests/               # Tests unitarios
-├── notebooks/           # Análisis exploratorio
-├── data/                # Datos crudos y procesados
-└── docs/                # Documentación
+└── data/                # Datos crudos y procesados
 ```
 
 ## Tests
@@ -73,6 +71,14 @@ scraper-sbs-peru/
 ```bash
 pytest -v
 ```
+
+## Fuentes de datos
+
+| Fuente | Descripción | Enlace |
+|--------|-------------|--------|
+| SBS - Tipo de Cambio | Superintendencia de Banca y Seguros - tipo de cambio bancario | [https://www.sbs.gob.pe/app/pp/SISTIP_PORTAL/Paginas/Publicacion/TipoCambioPromedio.aspx](https://www.sbs.gob.pe/app/pp/SISTIP_PORTAL/Paginas/Publicacion/TipoCambioPromedio.aspx) |
+| SUNAT - Tipo de Cambio | Tipo de cambio oficial para operaciones tributarias | [https://e-consulta.sunat.gob.pe/cl-at-ittipcam/tcS01Alias](https://e-consulta.sunat.gob.pe/cl-at-ittipcam/tcS01Alias) |
+| SBS - Estadísticas | Portal estadístico del sistema financiero peruano | [https://www.sbs.gob.pe/estadisticas-y-publicaciones/estadisticas-](https://www.sbs.gob.pe/estadisticas-y-publicaciones/estadisticas-) |
 
 ## Licencia
 
