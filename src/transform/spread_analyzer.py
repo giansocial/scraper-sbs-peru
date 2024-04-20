@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 from src.utils.logger import setup_logger
 
