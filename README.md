@@ -80,6 +80,16 @@ pytest -v
 | SUNAT - Tipo de Cambio | Tipo de cambio oficial para operaciones tributarias | [https://e-consulta.sunat.gob.pe/cl-at-ittipcam/tcS01Alias](https://e-consulta.sunat.gob.pe/cl-at-ittipcam/tcS01Alias) |
 | SBS - Estadísticas | Portal estadístico del sistema financiero peruano | [https://www.sbs.gob.pe/estadisticas-y-publicaciones/estadisticas-](https://www.sbs.gob.pe/estadisticas-y-publicaciones/estadisticas-) |
 
+## Visualizaciones
+
+Resultados del analisis exploratorio (notebook completo en `notebooks/`):
+
+![Tendencia del tipo de cambio USD/PEN](docs/images/grafico_01.png)
+
+![Distribucion del spread por banco](docs/images/grafico_02.png)
+
+![Tipo de cambio promedio mensual por banco](docs/images/grafico_03.png)
+
 ## Licencia
 
 MIT
