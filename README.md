@@ -6,24 +6,9 @@ Soy Gian Cruz. Me puse a revisar las cotizaciones diarias que publica la SBS y m
 
 Lo que hice fue construir un scraper que extrae automáticamente las cotizaciones bancarias de la SBS y el tipo de cambio oficial de la SUNAT, las limpia, normaliza los nombres de las entidades y calcula el spread de cada banco a lo largo del tiempo. Con eso puedo hacer ranking de bancos, detectar cuándo los spreads se disparan y comparar el tipo de cambio bancario contra el oficial.
 
-El resultado: los bancos grandes (BCP, BBVA, Scotiabank) mantienen spreads estables de S/. 0.02-0.03, mientras que las entidades de microfinanzas cobran 3 a 5 veces más margen. En periodos de inestabilidad política, todos los spreads se amplían simultáneamente, y el tipo de cambio bancario se despega del oficial de la SUNAT hasta en S/. 0.08. Patrones que solo se ven cuando juntas las dos fuentes y miras la serie completa.
+Con los datos procesados encontré que los bancos grandes (BCP, BBVA, Scotiabank) mantienen spreads estables de S/. 0.02-0.03, mientras que las entidades de microfinanzas cobran 3 a 5 veces más margen. En periodos de inestabilidad política, todos los spreads se amplían simultáneamente, y el tipo de cambio bancario se despega del oficial de la SUNAT hasta en S/. 0.08. Patrones que solo se ven cuando juntas las dos fuentes y miras la serie completa.
 
 Si quieres ver cómo funciona el scraper o tienes ideas sobre qué más se puede sacar de esta data cambiaria, el código está acá.
-
-## ¿Qué hace este proyecto?
-
-- **Extrae** las cotizaciones diarias de tipo de cambio desde la SBS y la SUNAT
-- **Limpia** y estandariza los nombres de las entidades financieras
-- **Calcula** el spread (margen) de cada banco y su evolución temporal
-- **Ranking** de bancos por spread promedio (¿quién cobra menos?)
-- **Detecta anomalías** en los spreads que podrían indicar movimientos inusuales
-- **Exporta** los datos procesados en CSV para análisis posterior
-
-## Hallazgos
-
-- Los bancos grandes (BCP, BBVA, Scotiabank) mantienen spreads más estables
-- Las entidades especializadas en microfinanzas muestran mayor volatilidad en sus márgenes
-- En períodos de inestabilidad política, los spreads de todas las entidades se amplían simultáneamente
 
 ## Stack tecnológico
 
@@ -108,7 +93,7 @@ I'm Gian Cruz. I started checking the daily quotes published by the SBS and real
 
 What I built is a scraper that automatically extracts bank quotes from the SBS and the official rate from SUNAT, cleans them, normalizes entity names, and calculates each bank's spread over time. With that I can rank banks, detect when spreads spike, and compare the banking rate against the official one.
 
-The result: big banks (BCP, BBVA, Scotiabank) keep stable spreads of S/. 0.02-0.03, while microfinance entities charge 3 to 5 times more. During political instability, all spreads widen simultaneously, and the banking rate diverges from SUNAT's official rate by up to S/. 0.08.
+After processing the data, big banks (BCP, BBVA, Scotiabank) keep stable spreads of S/. 0.02-0.03, while microfinance entities charge 3 to 5 times more. During political instability, all spreads widen simultaneously, and the banking rate diverges from SUNAT's official rate by up to S/. 0.08.
 
 If you want to see how the scraper works or have ideas about what else can be extracted from exchange rate data, the code is right here.
 
