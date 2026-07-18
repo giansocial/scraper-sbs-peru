@@ -1,5 +1,5 @@
 import time
-from datetime import date, datetime
+from datetime import date
 from typing import Any
 
 import requests
@@ -99,7 +99,7 @@ class SBSScraper:
             if buy_rate is None or sell_rate is None:
                 continue
 
-            spread = round(sell_rate - buy_rate, 4) if sell_rate and buy_rate else None
+            spread = round(sell_rate - buy_rate, 4) if sell_rate is not None and buy_rate is not None else None
 
             records.append({
                 "fecha": target_date,

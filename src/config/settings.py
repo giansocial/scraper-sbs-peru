@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -18,18 +17,3 @@ SBS_RETRY_DELAY = 2.0
 SBS_RATE_LIMIT_SECONDS = 2.0
 
 SUNAT_TC_URL = "https://e-consulta.sunat.gob.pe/cl-at-ittipcam/tcS01Alias"
-
-BANKS = [
-    "B. Continental",
-    "B. de Comercio",
-    "B. de Credito del Peru",
-    "B. Interamericano de Finanzas",
-    "B. Pichincha",
-    "Scotiabank Peru",
-    "Interbank",
-    "MiBanco",
-    "B. GNB",
-    "B. Falabella Peru",
-    "B. Ripley",
-    "B. Santander Peru",
-]
